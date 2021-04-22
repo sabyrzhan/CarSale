@@ -13,6 +13,7 @@
 		F52939E72620FDA700668F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52939E52620FDA700668F8B /* Main.storyboard */; };
 		F52939E92620FDA800668F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52939E82620FDA800668F8B /* Assets.xcassets */; };
 		F52939EC2620FDA800668F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52939EA2620FDA800668F8B /* LaunchScreen.storyboard */; };
+		F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52939F426225EE700668F8B /* VerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F52939E82620FDA800668F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52939EB2620FDA800668F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52939ED2620FDA800668F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52939F426225EE700668F8B /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F52939E82620FDA800668F8B /* Assets.xcassets */,
 				F52939EA2620FDA800668F8B /* LaunchScreen.storyboard */,
 				F52939ED2620FDA800668F8B /* Info.plist */,
+				F52939F426225EE700668F8B /* VerificationViewController.swift */,
 			);
 			path = CarSale;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				F52939E42620FDA700668F8B /* ViewController.swift in Sources */,
 				F52939E02620FDA700668F8B /* AppDelegate.swift in Sources */,
+				F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */,
 				F52939E22620FDA700668F8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
