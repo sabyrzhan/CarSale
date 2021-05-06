@@ -34,4 +34,9 @@ class VerificationViewController: UIViewController, UITextFieldDelegate {
                 currentString.replacingCharacters(in: range, with: string) as NSString
             return newString.length <= maxLength
     }
+    
+    @IBAction func continuePressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "showCreateProfileSegue", sender: self);
+    }
+    
 }
