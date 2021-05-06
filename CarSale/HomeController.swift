@@ -11,14 +11,39 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var messagesButton: UIButton!
     
+    let badgeSize: CGFloat = 15
+    let badgeTag = 9830384
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        messagesButton.backgroundColor = .clear;
+        messagesButton.backgroundColor = .white
         messagesButton.layer.cornerRadius = messagesButton.bounds.width / 2;
-        messagesButton.layer.borderWidth = 1
-        messagesButton.layer.borderColor = UIColor.black.cgColor;
+        let badge = badgeLabel(withCount: 10);
+        messagesButton.addSubview(badge);
+        
+        NSLayoutConstraint.activate([
+                badge.leftAnchor.constraint(equalTo: messagesButton.leftAnchor, constant: 20),
+                badge.topAnchor.constraint(equalTo: messagesButton.topAnchor, constant: 4),
+                badge.widthAnchor.constraint(equalToConstant: badgeSize),
+                badge.heightAnchor.constraint(equalToConstant: badgeSize)
+            ])
+    }
+    
+    func badgeLabel(withCount count: Int) -> UILabel {
+        let badgeCount = UILabel(frame: CGRect(x: 0, y: 0, width: badgeSize, height: badgeSize))
+        badgeCount.translatesAutoresizingMaskIntoConstraints = false
+        badgeCount.tag = badgeTag
+        print(badgeCount.bounds.size.width, " ", badgeCount.bounds.size.width);
+        badgeCount.layer.cornerRadius = badgeCount.bounds.size.width / 2
+        badgeCount.textAlignment = .center
+        badgeCount.layer.masksToBounds = true
+        badgeCount.textColor = .white
+        badgeCount.font = badgeCount.font.withSize(10)
+        badgeCount.backgroundColor = .systemRed
+        badgeCount.text = String(count)
+        return badgeCount
     }
     
 
