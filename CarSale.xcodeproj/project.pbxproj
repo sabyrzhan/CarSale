@@ -15,6 +15,7 @@
 		F52939EC2620FDA800668F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52939EA2620FDA800668F8B /* LaunchScreen.storyboard */; };
 		F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52939F426225EE700668F8B /* VerificationViewController.swift */; };
 		F58A81AE2644444700A23DCE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A81AD2644444700A23DCE /* HomeController.swift */; };
+		F58E5A692644CAFC0007C874 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */; };
 		F5BA365A26435AC3005CA91B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA365926435AC3005CA91B /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		F52939ED2620FDA800668F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52939F426225EE700668F8B /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		F58A81AD2644444700A23DCE /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5BA365926435AC3005CA91B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				F52939F426225EE700668F8B /* VerificationViewController.swift */,
 				F5BA365926435AC3005CA91B /* RegisterViewController.swift */,
 				F58A81AD2644444700A23DCE /* HomeController.swift */,
+				F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */,
 			);
 			path = CarSale;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				F58A81AE2644444700A23DCE /* HomeController.swift in Sources */,
 				F52939E02620FDA700668F8B /* AppDelegate.swift in Sources */,
 				F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */,
+				F58E5A692644CAFC0007C874 /* HomeBannerCollectionViewCell.swift in Sources */,
 				F52939E22620FDA700668F8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

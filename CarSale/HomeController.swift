@@ -10,12 +10,14 @@ import UIKit
 class HomeController: UIViewController {
 
     @IBOutlet weak var messagesButton: UIButton!
+    @IBOutlet weak var bannerCollectionView: UICollectionView!
     
     let badgeSize: CGFloat = 15
     let badgeTag = 9830384
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bannerCollectionView.dataSource = self
 
         // Do any additional setup after loading the view.
         messagesButton.backgroundColor = .white
@@ -57,4 +59,16 @@ class HomeController: UIViewController {
     }
     */
 
+}
+
+extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBannerCollectionViewCell", for: indexPath) as! HomeBannerCollectionViewCell
+        cell.imageSet = true
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
 }
