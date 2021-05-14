@@ -14,6 +14,7 @@
 		F52939E92620FDA800668F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52939E82620FDA800668F8B /* Assets.xcassets */; };
 		F52939EC2620FDA800668F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52939EA2620FDA800668F8B /* LaunchScreen.storyboard */; };
 		F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52939F426225EE700668F8B /* VerificationViewController.swift */; };
+		F5698CA1264DEAE3008D9D30 /* CarMakesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5698CA0264DEAE3008D9D30 /* CarMakesCollectionViewCell.swift */; };
 		F58A81AE2644444700A23DCE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A81AD2644444700A23DCE /* HomeController.swift */; };
 		F58E5A692644CAFC0007C874 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */; };
 		F5BA365A26435AC3005CA91B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA365926435AC3005CA91B /* RegisterViewController.swift */; };
@@ -29,6 +30,7 @@
 		F52939EB2620FDA800668F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52939ED2620FDA800668F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52939F426225EE700668F8B /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		F5698CA0264DEAE3008D9D30 /* CarMakesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakesCollectionViewCell.swift; sourceTree = "<group>"; };
 		F58A81AD2644444700A23DCE /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5BA365926435AC3005CA91B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				F5BA365926435AC3005CA91B /* RegisterViewController.swift */,
 				F58A81AD2644444700A23DCE /* HomeController.swift */,
 				F58E5A682644CAFC0007C874 /* HomeBannerCollectionViewCell.swift */,
+				F5698CA0264DEAE3008D9D30 /* CarMakesCollectionViewCell.swift */,
 			);
 			path = CarSale;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				F52939E42620FDA700668F8B /* ViewController.swift in Sources */,
 				F5BA365A26435AC3005CA91B /* RegisterViewController.swift in Sources */,
+				F5698CA1264DEAE3008D9D30 /* CarMakesCollectionViewCell.swift in Sources */,
 				F58A81AE2644444700A23DCE /* HomeController.swift in Sources */,
 				F52939E02620FDA700668F8B /* AppDelegate.swift in Sources */,
 				F52939F526225EE700668F8B /* VerificationViewController.swift in Sources */,

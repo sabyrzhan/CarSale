@@ -11,13 +11,19 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var messagesButton: UIButton!
     @IBOutlet weak var bannerCollectionView: UICollectionView!
+    @IBOutlet weak var carMakesCollectionView: UICollectionView!
     
     let badgeSize: CGFloat = 15
     let badgeTag = 9830384
+    var homeBannerDataSource: HomeBannerCollectionViewDataSource?
+    var carMakesDataSource: CarMakesCollectionViewDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.bannerCollectionView.dataSource = self
+        self.homeBannerDataSource = HomeBannerCollectionViewDataSource()
+        self.carMakesDataSource = CarMakesCollectionViewDataSource();
+        self.bannerCollectionView.dataSource = homeBannerDataSource;
+        self.carMakesCollectionView.dataSource = carMakesDataSource;
 
         // Do any additional setup after loading the view.
         messagesButton.backgroundColor = .white
@@ -59,16 +65,4 @@ class HomeController: UIViewController {
     }
     */
 
-}
-
-extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBannerCollectionViewCell", for: indexPath) as! HomeBannerCollectionViewCell
-        cell.imageSet = true
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
 }

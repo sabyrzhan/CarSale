@@ -16,3 +16,17 @@ class HomeBannerCollectionViewCell: UICollectionViewCell {
         }
     }
 }
+
+class HomeBannerCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
+        
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBannerCollectionViewCell", for: indexPath) as! HomeBannerCollectionViewCell
+        cell.imageSet = true
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+}
